@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ object.title }}</h1>
+<p>id: {{ object.id }}</p>
+<p>{{ object.content }}</p>
+<a href= '{{ object.get_absolute_url }}update/'>Update</a></br>
+<a href= '{{ object.get_absolute_url }}delete/'>Delete</a>
+{% endblock content %}
